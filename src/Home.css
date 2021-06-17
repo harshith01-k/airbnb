@@ -1,0 +1,16 @@
+.home__section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  margin: 45px 25px;
+  grid-gap: 10px;
+  max-width: 100%;
+}
+
+@media (max-width: 500px) {
+  .home__section {
+    grid-gap: 0;
+  }
+  .home__section {
+    grid-template-columns: 1fr;
+  }
+}
